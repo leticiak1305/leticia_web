@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read sample customer reviews for Leticia's Cafe.">
+    <title>Reviews | Leticia's Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/site.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="index.html">LETICIA'S <span>CAFE</span></a>
+    
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html" aria-current="page">Reviews</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">What People Say</p>
+            <h1>Customer <span class="accent">Reviews.</span></h1>
+            <p>Customer feedback helps us understand what matters most and how we can improve.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Guest Experiences</p>
+                <h2>Words That <span class="accent">Matter</span></h2>
+                <p>The following are example reviews for the website design, not verified customer testimonials.</p>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>A Relaxing Experience</h3>
+                    <p>"A cafe should feel welcoming and comfortable. This is the kind of experience I look for."</p>
+                    <p class="small">— Sample customer review</p>
+                </article>
+
+                <article class="card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>Great Coffee Moments</h3>
+                    <p>"Taking time out for a good cup of coffee makes an ordinary day feel special."</p>
+                    <p class="small">— Sample customer review</p>
+                </article>
+
+                <article class="card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>A Place to Meet</h3>
+                    <p>"A cafe is a great place to catch up with friends and enjoy a little break."</p>
+                    <p class="small">— Sample customer review</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="container">
+            <div class="grid two">
+                <div>
+                    <p class="eyebrow">Your Voice Counts</p>
+                    <h2>Share Your <span class="accent">Experience.</span></h2>
+                    <p>We welcome feedback about food, drinks, service, and the atmosphere.</p>
+                </div>
+
+                <div class="card">
+                    <form action="thank_you.html" method="get">
+                        <label for="review-name">Your name</label>
+                        <input type="text" id="review-name" name="name" placeholder="Enter your name" required>
+
+                        <label for="rating">Your rating</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Choose a rating</option>
+                            <option value="5">★★★★★ — Excellent</option>
+                            <option value="4">★★★★ — Very good</option>
+                            <option value="3">★★★ — Good</option>
+                            <option value="2">★★ — Fair</option>
+                            <option value="1">★ — Needs improvement</option>
+                        </select>
+
+                        <label for="review-message">Your review</label>
+                        <textarea id="review-message" name="review" placeholder="Share your feedback..." required></textarea>
+
+                        <button type="submit">Submit Review</button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand" href="index.html">LETICIA'S <span>CAFE</span></a>
+            <p class="small">Good food. Great coffee. Beautiful moments.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="small">© 2026 Leticia's Cafe. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Leticia's Cafe with questions, feedback, or event enquiries.">
+    <title>Contact Us | Leticia's Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="index.html">LETICIA'S <span>CAFE</span></a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">We Would Love to Hear from You</p>
+            <h1>Get in <span class="accent">Touch.</span></h1>
+            <p>Have a question, suggestion, or event idea? Send us an enquiry.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid two">
+            <div>
+                <p class="eyebrow">Contact Information</p>
+                <h2>Let's Start a <span class="accent">Conversation.</span></h2>
+                <p>Use the contact form or replace the sample details below with the cafe's actual information.</p>
+
+                <div class="card mt">
+                    <h3>📍 Our Location</h3>
+                    <p>Add the cafe's address here.</p>
+                </div>
+
+                <div class="card mt">
+                    <h3>📞 Phone</h3>
+                    <p>Add the cafe's phone number here.</p>
+                </div>
+
+                <div class="card mt">
+                    <h3>✉️ Email</h3>
+                    <p>Add the cafe's email address here.</p>
+                </div>
+
+                <div class="card mt">
+                    <h3>🕒 Opening Hours</h3>
+                    <p>Add the cafe's confirmed opening days and times here.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Send an <span class="accent">Enquiry</span></h2>
+                <form action="thank_you.html" method="get">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="phone">Phone number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+                    <label for="subject">Enquiry subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="general">General question</option>
+                        <option value="menu">Menu enquiry</option>
+                        <option value="event">Event enquiry</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+
+                    <button type="submit">Send Enquiry</button>
+                </form>
+
+                <p class="small mt">Demo form: this page does not send or store your message.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand" href="index.html">LETICIA'S <span>CAFE</span></a>
+            <p class="small">Good food. Great coffee. Beautiful moments.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+<a href="thank_you.html">Thank you</a>
+        </div>
+        <p class="small">© 2026 Leticia's Cafe. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
