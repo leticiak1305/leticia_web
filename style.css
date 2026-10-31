@@ -1,21 +1,29 @@
 
 /* =================================================
    LETICIA'S CAFE
-   CLASSIC MODERN PROFESSIONAL DESIGN
-   Black • Emerald • Soft White
+   WARM LUXURY PROFESSIONAL THEME
+   Cream • Coffee Brown • Caramel • Soft Gold
 ================================================= */
 
 :root {
-    --black: #080c09;
-    --dark: #101812;
-    --panel: #142019;
-    --green: #16834a;
-    --emerald: #20a45a;
-    --light-green: #a7e8bd;
-    --white: #f7faf7;
-    --muted: #aab9ae;
-    --border: rgba(167, 232, 189, .16);
-    --shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    --black: #3b2920;
+    --dark: #fffaf2;
+    --panel: #fff5e8;
+    --panel-light: #f6e9d8;
+
+    --green: #a65f35;
+    --emerald: #c47b48;
+    --light-green: #dba46c;
+
+    --white: #3b2920;
+    --muted: #79675a;
+    --border: rgba(121, 83, 52, .18);
+
+    --cream: #fffaf2;
+    --gold: #d6a45d;
+    --terracotta: #b86b4b;
+
+    --shadow: 0 10px 30px rgba(80, 50, 25, .09);
     --radius: 12px;
 }
 
@@ -30,12 +38,19 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 30px;
+    background: var(--cream);
 }
 
 body {
     min-width: 320px;
     overflow-x: hidden;
-    background: var(--black);
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(214, 164, 93, .10),
+            transparent 35%
+        ),
+        var(--cream);
     color: var(--white);
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 16px;
@@ -49,7 +64,7 @@ img {
 }
 
 a {
-    color: var(--light-green);
+    color: var(--green);
     text-decoration: none;
     transition: .25s ease;
 }
@@ -64,7 +79,7 @@ select {
 /* TYPOGRAPHY */
 
 h1, h2, h3, h4 {
-    color: var(--white);
+    color: var(--black);
     font-weight: 750;
     line-height: 1.2;
     letter-spacing: -.5px;
@@ -101,10 +116,10 @@ header {
     background:
         radial-gradient(
             ellipse at top,
-            rgba(32, 164, 90, .18),
+            rgba(214, 164, 93, .23),
             transparent 65%
         ),
-        var(--black);
+        #fff4e4;
     border-bottom: 1px solid var(--border);
 }
 
@@ -118,10 +133,10 @@ header p {
     margin: 5px auto;
 }
 
-/* BRAND / CAFE NAME */
+/* CAFE BRAND */
 
 .brand {
-    color: var(--white);
+    color: var(--black);
     font-size: 28px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -129,14 +144,14 @@ header p {
 }
 
 .brand span {
-    color: var(--emerald);
+    color: var(--terracotta);
 }
 
 /* NAVIGATION */
 
 nav {
     width: 100%;
-    background: #0c130e;
+    background: #f3e5d2;
     border-bottom: 1px solid var(--border);
     padding: 12px 15px;
 }
@@ -165,17 +180,17 @@ nav a {
     padding: 9px 17px;
     min-height: 42px;
     border-radius: 7px;
-    color: #e7f0e9;
+    color: var(--black);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 650;
     white-space: nowrap;
     transition: .25s ease;
 }
 
 nav a:hover,
 nav a.active {
-    color: #ffffff;
-    background: var(--green);
+    color: #fff;
+    background: var(--terracotta);
 }
 
 /* GENERAL PAGE LAYOUT */
@@ -205,7 +220,7 @@ section {
     display: block;
     width: 55px;
     height: 3px;
-    background: var(--emerald);
+    background: var(--terracotta);
     margin: 14px auto 0;
     border-radius: 10px;
 }
@@ -220,9 +235,9 @@ section {
     background:
         linear-gradient(
             90deg,
-            rgba(4, 12, 7, .94),
-            rgba(4, 12, 7, .65),
-            rgba(4, 12, 7, .2)
+            rgba(49, 30, 19, .88),
+            rgba(49, 30, 19, .58),
+            rgba(49, 30, 19, .12)
         ),
         url("../images/cafe-hero.jpg") center/cover no-repeat;
 }
@@ -232,20 +247,22 @@ section {
 }
 
 .hero h1 {
+    color: #fffaf2;
     font-size: clamp(2.5rem, 6vw, 4.5rem);
 }
 
 .hero h1 span {
-    color: var(--light-green);
+    color: #f1c78f;
 }
 
 .hero p {
     max-width: 550px;
+    color: #fff0df;
     font-size: 17px;
 }
 
 .eyebrow {
-    color: var(--light-green);
+    color: #f1c78f;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -261,9 +278,9 @@ section {
     align-items: center;
     min-height: 46px;
     padding: 12px 23px;
-    background: var(--green);
+    background: var(--terracotta);
     color: #fff;
-    border: 1px solid var(--green);
+    border: 1px solid var(--terracotta);
     border-radius: 7px;
     font-weight: 700;
     cursor: pointer;
@@ -271,20 +288,20 @@ section {
 }
 
 .btn:hover {
-    background: var(--emerald);
-    border-color: var(--emerald);
+    background: #965237;
+    border-color: #965237;
     color: #fff;
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background: transparent;
-    border-color: var(--light-green);
-    color: var(--white);
+    border-color: #f1c78f;
+    color: #fffaf2;
 }
 
 .btn-outline:hover {
-    background: var(--green);
+    background: var(--terracotta);
 }
 
 /* CARDS */
@@ -307,7 +324,7 @@ section {
 }
 
 .card {
-    background: var(--dark);
+    background: #fff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
@@ -317,7 +334,7 @@ section {
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: var(--emerald);
+    border-color: var(--light-green);
 }
 
 .card img {
@@ -350,7 +367,7 @@ section {
 }
 
 .menu-price {
-    color: var(--light-green);
+    color: #a45d32;
     font-weight: 800;
     white-space: nowrap;
 }
@@ -383,7 +400,7 @@ section {
 
 .check-list li::before {
     content: "✓";
-    color: var(--light-green);
+    color: var(--terracotta);
     font-weight: 900;
     margin-right: 12px;
 }
@@ -411,14 +428,14 @@ section {
 /* REVIEWS */
 
 .review {
-    background: var(--dark);
+    background: #fff5e8;
     border: 1px solid var(--border);
     padding: 25px;
     border-radius: var(--radius);
 }
 
 .stars {
-    color: #f5c451;
+    color: #c38a32;
     letter-spacing: 3px;
     margin-bottom: 12px;
 }
@@ -430,7 +447,7 @@ section {
     gap: 20px;
     align-items: center;
     padding: 22px;
-    background: var(--dark);
+    background: #fff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     margin-bottom: 18px;
@@ -440,7 +457,7 @@ section {
     min-width: 70px;
     text-align: center;
     padding: 12px;
-    background: var(--green);
+    background: var(--terracotta);
     color: #fff;
     border-radius: 8px;
     font-weight: 800;
@@ -451,10 +468,11 @@ section {
 .form-container {
     max-width: 700px;
     margin: auto;
-    background: var(--dark);
+    background: #fff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 30px;
+    box-shadow: var(--shadow);
 }
 
 form {
@@ -465,7 +483,7 @@ form {
 label {
     display: block;
     margin-bottom: 6px;
-    color: var(--white);
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -474,9 +492,9 @@ textarea,
 select {
     width: 100%;
     padding: 13px 15px;
-    background: #0b130d;
-    color: var(--white);
-    border: 1px solid var(--border);
+    background: #fffaf4;
+    color: var(--black);
+    border: 1px solid #dfcbb5;
     border-radius: 7px;
     outline: none;
 }
@@ -484,8 +502,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-    border-color: var(--emerald);
-    box-shadow: 0 0 0 3px rgba(32, 164, 90, .13);
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 3px rgba(184, 107, 75, .12);
 }
 
 textarea {
@@ -495,7 +513,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: #829187;
+    color: #9b8978;
 }
 
 /* CONTACT */
@@ -507,7 +525,7 @@ textarea::placeholder {
 }
 
 .contact-info {
-    background: var(--dark);
+    background: #fff5e8;
     padding: 28px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
@@ -520,9 +538,19 @@ textarea::placeholder {
 /* FOOTER */
 
 footer {
-    background: #050906;
-    border-top: 1px solid var(--border);
+    background: #39271e;
+    border-top: 1px solid rgba(255,255,255,.1);
     padding: 55px 5% 20px;
+}
+
+footer h3 {
+    color: #f1c78f;
+}
+
+footer p,
+footer a {
+    color: #e3d2c2;
+    font-size: 14px;
 }
 
 .footer-grid {
@@ -531,31 +559,22 @@ footer {
     gap: 35px;
 }
 
-footer h3 {
-    color: var(--light-green);
-}
-
-footer p,
-footer a {
-    color: var(--muted);
-    font-size: 14px;
-}
-
 .footer-links {
     display: grid;
     gap: 9px;
 }
 
 footer a:hover {
-    color: var(--light-green);
+    color: #f1c78f;
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(255,255,255,.15);
     padding-top: 20px;
     margin-top: 35px;
     font-size: 13px;
+    color: #cbb8a6;
 }
 
 /* RESPONSIVE TABLETS */
@@ -658,5 +677,5 @@ footer a:hover {
     .hero h1 {
         font-size: 36px;
     }
-    }
-    
+   }
+               
