@@ -743,3 +743,35 @@ footer {
         height: 180px;
     }
 }
+
+/* HORIZONTAL NAVIGATION */
+.nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 12px;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 700px) {
+    .nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .nav a {
+        flex-shrink: 0;
+    }
+        }
